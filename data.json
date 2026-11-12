@@ -1,0 +1,152 @@
+{
+  "users": [
+    {
+      "id": "7548a4879597",
+      "name": "viswa",
+      "email": "viswaanshuman@gmail.com",
+      "role": "farmer",
+      "salt": "943372503126",
+      "pw": "862acf79544213bd0262a84bc4f33a5f7e4c24294062a8ea866c42358cb29aac"
+    },
+    {
+      "id": "92fa17e7a373",
+      "name": "chisty",
+      "email": "khkjfadkj",
+      "role": "buyer",
+      "salt": "79f1fa50e042",
+      "pw": "dd5092bb94600fd5ed455e593b7d3278c2ba359de3321b95dade6d9aa328263f"
+    },
+    {
+      "id": "68a952ef4a2c",
+      "name": "chisty",
+      "email": "chisty",
+      "role": "buyer",
+      "salt": "ca1e0c1426d0",
+      "pw": "3a79c4062bc2136e43559a95d7a108b1d6a98b2006cadea3654a0c19c4aefa08"
+    },
+    {
+      "id": "a37f9b4e8762",
+      "name": "chisty",
+      "email": "chisty@157",
+      "role": "buyer",
+      "salt": "f6bb8f12694a",
+      "pw": "5d1f3372fd945fc8e9974b6d08cae88f6256e8ceb931d851354ce03a7c20d165"
+    },
+    {
+      "id": "fd59798b7442",
+      "name": "viswa",
+      "email": "viswa@123",
+      "role": "farmer",
+      "salt": "ea5cbd5833e6",
+      "pw": "80a3deddbc3110dd01f0ac27de0c2d746f3853b4894d96cd1a0c78c8381deafc"
+    },
+    {
+      "id": "21e4a9701384",
+      "name": "sameer",
+      "email": "sameer@123",
+      "role": "farmer",
+      "salt": "9fea3077d9a4",
+      "pw": "506c10dc1233fe70d2f26b7728c4a2622067ae0462fc78bed3641101591d6167"
+    },
+    {
+      "id": "f0a47e14d4f2",
+      "name": "JWT Test",
+      "email": "jwt-test-fd55007f69494154ac6aef49f4c639ed@example.com",
+      "role": "buyer",
+      "salt": "20f6af8a4f03",
+      "pw": "4444c6a0159ad0f0802b7740e294619f39021925d1f56de424bc572fb1c0547d"
+    }
+  ],
+  "products": [
+    {
+      "id": "5f851a32a9e7",
+      "farmerId": "fd59798b7442",
+      "farmerName": "viswa",
+      "name": "Tomato",
+      "category": "Vegetables",
+      "price": 2,
+      "quantity": 2,
+      "location": "Eluru"
+    },
+    {
+      "id": "47757e4cffb2",
+      "farmerId": "21e4a9701384",
+      "farmerName": "sameer",
+      "name": "Potato",
+      "category": "Vegetables",
+      "price": 25,
+      "quantity": 47,
+      "location": "Vijayawada Vaddesswaram"
+    },
+    {
+      "id": "2d4a1b265b33",
+      "farmerId": "fd59798b7442",
+      "farmerName": "viswa",
+      "name": "onion",
+      "category": "Vegetables",
+      "price": 25,
+      "quantity": 20,
+      "location": "godavari"
+    },
+    {
+      "id": "0832b5204489",
+      "farmerId": "fd59798b7442",
+      "farmerName": "viswa",
+      "name": "apple",
+      "category": "Fruits",
+      "price": 20,
+      "quantity": 50,
+      "location": "eluru"
+    }
+  ],
+  "orders": [
+    {
+      "id": "c9c8fa4cec4c",
+      "productId": "5f851a32a9e7",
+      "productName": "Tomato",
+      "farmerId": "fd59798b7442",
+      "buyerId": "a37f9b4e8762",
+      "buyerName": "chisty",
+      "quantity": 12,
+      "total": 24,
+      "status": "Delivered",
+      "date": "2026-10-06T04:23:28.100Z"
+    },
+    {
+      "id": "29aae68cd547",
+      "productId": "5f851a32a9e7",
+      "productName": "Tomato",
+      "farmerId": "fd59798b7442",
+      "buyerId": "a37f9b4e8762",
+      "buyerName": "chisty",
+      "quantity": 3,
+      "total": 6,
+      "status": "Delivered",
+      "date": "2026-10-07T17:23:08.209Z"
+    },
+    {
+      "id": "80675bd4ee82",
+      "productId": "5f851a32a9e7",
+      "productName": "Tomato",
+      "farmerId": "fd59798b7442",
+      "buyerId": "a37f9b4e8762",
+      "buyerName": "chisty",
+      "quantity": 2,
+      "total": 4,
+      "status": "Delivered",
+      "date": "2026-10-07T17:25:16.889Z"
+    },
+    {
+      "id": "bfe0b0008dd9",
+      "productId": "5f851a32a9e7",
+      "productName": "Tomato",
+      "farmerId": "fd59798b7442",
+      "buyerId": "a37f9b4e8762",
+      "buyerName": "chisty",
+      "quantity": 6,
+      "total": 12,
+      "status": "Pending",
+      "date": "2026-10-08T09:18:50.866Z"
+    }
+  ]
+}

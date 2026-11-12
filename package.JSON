@@ -1,0 +1,13 @@
+{
+  "name": "agri-connect",
+  "version": "1.0.0",
+  "description": "Farmer-friendly marketplace connecting farmers and buyers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

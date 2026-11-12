@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "installCommand": "node -e \"require('fs').copyFileSync('package.JSON','package.json')\" && npm install",
+  "functions": {
+    "api/[...path].js": {
+      "includeFiles": "data.json"
+    }
+  }
+}

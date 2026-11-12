@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriConnect - Farm to Buyer</title>
+  <link rel="stylesheet" href="style.CSS">
+</head>
+<body>
+  <header>
+    <h1>🌾 AgriConnect</h1>
+    <div id="nav"></div>
+  </header>
+
+  <main>
+    <!-- Login / Register -->
+    <section id="auth" class="card hidden">
+      <h2>Login or Register</h2>
+      <input id="a-name" placeholder="Full name (for registering)">
+      <input id="a-email" type="email" placeholder="Email">
+      <input id="a-pass" type="password" placeholder="Password">
+      <select id="a-role"><option value="farmer">I am a Farmer</option><option value="buyer">I am a Buyer</option></select>
+      <div class="row">
+        <button onclick="login()">Login</button>
+        <button class="alt" onclick="register()">Register</button>
+      </div>
+      <p id="a-msg" class="msg"></p>
+    </section>
+
+    <!-- Farmer dashboard -->
+    <section id="farmer" class="hidden">
+      <div class="card">
+        <h2>Add a Product</h2>
+        <input id="p-name" placeholder="Product (e.g. Tomato)" oninput="hint()">
+        <select id="p-cat"><option>Vegetables</option><option>Fruits</option><option>Grains</option><option>Pulses</option><option>Dairy</option><option>Other</option></select>
+        <input id="p-price" type="number" placeholder="Price per kg (₹)">
+        <input id="p-qty" type="number" placeholder="Quantity available (kg)">
+        <input id="p-loc" placeholder="Village / District">
+        <p id="p-hint" class="hint"></p>
+        <button onclick="addProduct()">List Product</button>
+      </div>
+      <div class="card">
+        <h2>My Products</h2>
+        <div id="my-products"></div>
+      </div>
+      <div class="card">
+        <h2>Orders Received &amp; Sales</h2>
+        <p id="sales" class="big"></p>
+        <div id="f-orders"></div>
+      </div>
+    </section>
+
+    <!-- Buyer dashboard -->
+    <section id="buyer" class="hidden">
+      <div class="card"><h2>My Orders</h2><div id="b-orders"></div></div>
+    </section>
+
+    <!-- Market (visible to everyone) -->
+    <section id="market">
+      <div class="card">
+        <h2>📈 Market Trends</h2>
+        <div id="trends" class="grid"></div>
+      </div>
+      <div class="card">
+        <h2>🌱 Fertilizer Suggestions</h2>
+        <select id="f-crop"></select>
+        <input id="f-acres" type="number" min="0.1" step="0.1" value="1" placeholder="Land area (acres)">
+        <button onclick="getFert()">Get Suggestion</button>
+        <div id="f-result"></div>
+      </div>
+      <div class="card">
+        <h2>📅 Seasonal Guides</h2>
+        <div id="seasons" class="grid"></div>
+      </div>
+      <div class="card">
+        <h2>Fresh Produce</h2>
+        <input id="search" placeholder="Search by product, category or place..." oninput="loadProducts()">
+        <div id="products" class="grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
